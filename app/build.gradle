@@ -1,6 +1,13 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.secrets_gradle_plugin' version '0.4'
+
 }
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def GMP_KEY = properties.getProperty('GMP_KEY')
+
 
 android {
     compileSdk 32
@@ -11,6 +18,8 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
+        flavorDimensions "default"
+        multiDexEnabled true
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
@@ -49,6 +58,14 @@ android {
         baseline = file("lint-baseline.xml")
     }
 
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
+
     productFlavors {
         productions {
             applicationId "com.prod.startpark_admin"
@@ -63,6 +80,7 @@ android {
 
 dependencies {
 
+    implementation 'com.google.android.material:material:1.7.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
@@ -82,9 +100,6 @@ dependencies {
 
     //..CircleImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-
-    //..CustomCalendar
-    implementation 'com.github.npanigrahy:Custom-Calendar-View:v1.1'
 
     //..EventBus
     implementation 'org.greenrobot:eventbus:3.3.1'

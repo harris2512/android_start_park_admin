@@ -1,0 +1,23 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/colorWhiteSmoke"
+    tools:targetApi="lollipop">
+
+    <item>
+        <shape>
+            <gradient
+                android:angle="135"
+                android:centerColor="@color/white"
+                android:endColor="@color/white"
+                android:startColor="@color/white" />
+
+<!--            <stroke-->
+<!--                android:width="0.05dp"-->
+<!--                android:color="@color/colorGreyLight" />-->
+
+            <corners android:radius="@dimen/sizeSix" />
+
+        </shape>
+    </item>
+
+</ripple>

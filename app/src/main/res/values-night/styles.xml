@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="user_theme">styles</style>
+
+    <!--    Calender View      -->
+    <style name="CalenderTheme" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="materialCalendarStyle">@style/Custom_MaterialCalendar.Fullscreen</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:itemTextAppearance">@style/MyTextAppearance</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ThemeMaterialCalendarButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ThemeMaterialCalendarButton</item>
+        <item name="materialCalendarHeaderTitle">@style/Widget.MaterialComponents.MaterialCalendar
+        </item>
+        <item name="materialCalendarHeaderSelection">@style/materialHeaderSelection</item>
+        <item name="materialCalendarHeaderToggleButton">@style/ThemeMaterialCalendarButton</item>
+    </style>
+
+    <style name="materialHeaderSelection" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Custom_MaterialCalendar.Fullscreen" parent="@style/Widget.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="color">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ThemeMaterialCalendarButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--Bottom sheet Dialog-->
+    <style name="TransparentDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:textAppearance">@style/ProductTextViewStyle</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--Font Family-->
+    <style name="ProductTextViewStyle" parent="Widget.AppCompat.TextView">
+        <!--        <item name="android:fontFamily">@font/roboto_regular</item>-->
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+
+    <style name="seller_user_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/colorTextPrimary</item>
+        <item name="android:textViewStyle">@style/ProductTextViewStyle</item>
+    </style>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--For Text-->
+    <dimen name="over_line_regular">5pt</dimen>
+    <dimen name="caption_regular">6pt</dimen>
+    <dimen name="button_medium">7pt</dimen>
+    <dimen name="body_medium">9pt</dimen>
+    <dimen name="subtitle_medium">7pt</dimen>
+    <dimen name="body_regular">8pt</dimen>
+    <dimen name="subtitle_regular">8pt</dimen>
+    <dimen name="headline_small">9pt</dimen>
+    <dimen name="headline_medium">10pt</dimen>
+    <dimen name="headline_regular">11pt</dimen>
+    <dimen name="headline_regular_1">12pt</dimen>
+    <dimen name="headline_regular_2">17pt</dimen>
+    <dimen name="headline_regular_3">24pt</dimen>
+    <dimen name="headline_regular_4">30pt</dimen>
+    <dimen name="headline_regular_5">48pt</dimen>
+
+
+
+    <!--For Screens-->
+    <dimen name="sizeTwo">1pt</dimen>
+    <dimen name="sizeFour">2pt</dimen>
+    <dimen name="sizeSix">3pt</dimen>
+    <dimen name="sizeEight">4pt</dimen>
+    <dimen name="sizeTen">5pt</dimen>
+    <dimen name="sizeTwelve">6pt</dimen>
+    <dimen name="sizeFourteen">7pt</dimen>
+    <dimen name="sizeSixteen">8pt</dimen>
+    <dimen name="sizeEighteen">9pt</dimen>
+    <dimen name="sizeTwenty">10pt</dimen>
+    <dimen name="sizeTwentyTwo">11pt</dimen>
+    <dimen name="sizeTwentyFour">12pt</dimen>
+    <dimen name="sizeTwentySix">13pt</dimen>
+    <dimen name="sizeTwentyEight">14pt</dimen>
+    <dimen name="sizeThirty">15pt</dimen>
+    <dimen name="sizeThirtyTwo">16pt</dimen>
+    <dimen name="sizeThirtyFour">17pt</dimen>
+    <dimen name="sizeThirtySix">18pt</dimen>
+    <dimen name="sizeThirtyEight">19pt</dimen>
+    <dimen name="sizeForty">20pt</dimen>
+    <dimen name="sizeFortyTwo">21pt</dimen>
+    <dimen name="sizeFortyFour">22pt</dimen>
+    <dimen name="sizeFortySix">23pt</dimen>
+    <dimen name="sizeFortyEight">24pt</dimen>
+    <dimen name="sizeFifty">25pt</dimen>
+    <dimen name="sizeFiftyFive">27pt</dimen>
+    <dimen name="sizeSixty">30pt</dimen>
+    <dimen name="sizeSeventy">35pt</dimen>
+    <dimen name="sizeEighty">40pt</dimen>
+    <dimen name="sizeNinety">45pt</dimen>
+    <dimen name="sizeHundred">50pt</dimen>
+    <dimen name="sizeOneTwenty">60pt</dimen>
+    <dimen name="sizeOneFifty">75pt</dimen>
+    <dimen name="sizeOneEighty">85pt</dimen>
+    <dimen name="sizeOneNinety">90pt</dimen>
+    <dimen name="sizeTwoHundred">100pt</dimen>
+    <dimen name="sizeTwoFifty">125pt</dimen>
+    <dimen name="sizeThreeHundred">150pt</dimen>
+    <dimen name="sizeThreeFifty">175pt</dimen>
+    <dimen name="sizeFourHundred">200pt</dimen>
+
+
+</resources>

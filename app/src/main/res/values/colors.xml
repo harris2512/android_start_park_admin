@@ -1,10 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <!--Primary-->
+    <color name="colorPrimary">#7676BB</color>
+    <color name="colorPrimaryDark">#7474C3</color>
+    <color name="colorAccent">#131311</color>
+    <color name="colorSecondary">#e3ae0e</color>
+    <color name="colorSecondaryDark">#e3ae0e</color>
+
+    <!--Secondary-->
+    <color name="colorWindowBackgroundPrimary">#E6FDFDFD</color>
+    <color name="colorWhiteSmoke">#E6F3F3F3</color>
+    <color name="colorViewBorder">#DBDBDB</color>
+    <color name="colorWindowBackground">#F7F7F7</color>
+
+
+    <!--For Extras-->
+    <color name="colorChipSnowLight">#F2F2F2</color>
+
+    <!--For Text-->
+    <color name="colorTextPrimary">#171717</color>
+    <color name="colorTextSecondary">#ECECEC</color>
+    <color name="textColorBackgroundDark">#FFFFFF</color>
+    <color name="textColorBackgroundLight">#000000</color>
+
+    <!--For Icons-->
+    <color name="colorIconBlack">#1E1E1E</color>
+    <color name="colorIconWhite">#F8F8F8</color>
+
+    <!--For Images / Source-->
+    <color name="colorImageGreyLight">#ECECEC</color>
+    <color name="colorImageGreyDark">#706E6E</color>
+    <color name="colorInputWaterPrimary">#26000000</color>
+
+    <!--For Layouts-->
+    <color name="colorCardWhite">#FFFFFF</color>
+    <color name="colorCardPrimary">#D1E9FB</color>
+    <color name="colorCardForegroundBlack">#B3000000</color>
+    <color name="colorCardBlurWhite">#80FFFFFF</color>
+    <color name="colorCardGreyLight">#E8E8E8</color>
+    <color name="colorCardYellowLight">#FDFAEF</color>
+    <color name="colorCardGreenRegular">#2AB371</color>
+    <color name="colorCardGreenLight">#B1D7B4</color>
+    <color name="colorCardGreenDark">#3D8361</color>
+
+    <!--map-->
+    <color name="colorStartLocationGreenNormal">#4CAF50</color>
+    <color name="colorEndLocationRedNormal">#F44336</color>
+
+    <!--Oil Colors-->
+    <color name="colorOilGreen">#4CAF50</color>
+    <color name="colorOilRed">#F44336</color>
+    <color name="colorOilYellow">#FFCA28</color>
+    <color name="colorOilOrange">#FDB152</color>
+
+    <!--Water Colors-->
+    <color name="colorWaterYellow">#80FFF8E1</color>
+    <color name="colorWaterGreen">#80E8F5E9</color>
+    <color name="colorWaterBlue">#F5FCFF</color>
+    <color name="colorWaterRed">#FBE9E7</color>
+    <color name="colorWaterBlack">#FAF4F4F4</color>
+    <color name="colorWaterOrange">#FBE6C7</color>
+
+    <!--GlobalColors-->
+    <color name="black">#010101</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="brown">#A52A2A</color>
+    <color name="purple">#800080</color>
+    <color name="grey">#808080</color>
+    <color name="indigo">#4B0082</color>
+    <color name="iris_purple">#8070E3</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="teal">#008080</color>
+    <color name="amber">#FFBF00</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray">#a6a6a6</color>
+    <color name="colorGreenPrimary">#66BB6A</color>
+    <color name="colorGreenPrimaryDark">#4CAF50</color>
+    <color name="colorYellowPrimary">#FFCC33</color>
+    <color name="colorYellowPrimaryDark">#F3C12D</color>
+    <color name="colorBluePrimary">#2D99EF</color>
+    <color name="colorBluePrimaryDark">#2994EA</color>
+    <color name="colorRedPrimary">#EF5350</color>
+    <color name="colorRedPrimaryDark">#EA4643</color>
+    <color name="colorGreyPrimary">#989898</color>
+    <color name="colorGreyPrimaryDark">#818181</color>
+    <color name="colorGreyLight">#BCBCBC</color>
+    <color name="colorGreyDark">#808080</color>
+    <color name="colorNightBlueLight">#401B3643</color>
+    <color name="colorNightBlueDark">#E21B3643</color>
+    <color name="colorLightBlue">#C6E6FF</color>
+    <color name="colorLightLavender">#bbd0ff</color>
+
+
+    <color name="colorCustomBlack">#2f2f2f</color>
+    <color name="colorChestnutBlack">#252321</color>
+
+
+
+    <!--Force Update-->
+    <color name="colorForceUpdateColorPrimary">#957DE3</color>
+
+
 </resources>

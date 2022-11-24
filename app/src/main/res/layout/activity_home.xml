@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home_dashboard_side_nav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBackground"
+    tools:context=".screens.activity.home.HomeActivity">
+
+    <include
+        android:id="@+id/layout_home_dashboard"
+        layout="@layout/include_home_dashboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/layout_home_dashboard_nav"
+        android:layout_width="@dimen/sizeThreeHundred"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fadeScrollbars="true"
+        android:scrollbars="none">
+
+        <!--Navigation Bar-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="@dimen/sizeTwo"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_home_dashboard_nav_profile_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sizeOneFifty"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_home_dashboard_nav_profile"
+                android:layout_width="@dimen/sizeSixty"
+                android:layout_height="@dimen/sizeSixty"
+                android:layout_margin="@dimen/sizeSixteen"
+                android:background="@drawable/bg_oval_primary"
+                android:padding="@dimen/sizeTwo"
+                android:src="@drawable/pc"
+                app:layout_constraintBottom_toBottomOf="@+id/img_home_dashboard_nav_profile_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_home_dashboard_nav_profile_background" />
+
+            <TextView
+                android:id="@+id/tv_home_dashboard_nav_profile_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sizeEight"
+                android:alpha="0.9"
+                android:fontFamily="@font/poppins_bold"
+                android:singleLine="true"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/headline_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_home_dashboard_nav_profile"
+                app:layout_constraintTop_toTopOf="@+id/img_home_dashboard_nav_profile" />
+
+            <TextView
+                android:id="@+id/tv_home_dashboard_nav_profile_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sizeEight"
+                android:alpha="0.8"
+                android:fontFamily="@font/poppins_regular"
+                android:singleLine="true"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/body_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_home_dashboard_nav_profile"
+                app:layout_constraintTop_toBottomOf="@+id/tv_home_dashboard_nav_profile_name" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_home_dashboard_side_nav_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                app:layout_constraintTop_toBottomOf="@+id/img_home_dashboard_nav_profile_background" />
+
+            <TextView
+                android:id="@+id/tv_home_dashboard_side_nav_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/sizeThirtySix"
+                android:alpha="0.5"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/over_line_regular"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

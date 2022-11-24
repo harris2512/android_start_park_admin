@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -11,8 +12,11 @@
         android:layout_height="wrap_content"
         android:text="Plot 1"
         android:gravity="center"
-        android:padding="@dimen/sizeSixteen"
         android:textColor="@color/colorTextPrimary"
+        android:paddingStart="@dimen/sizeSixteen"
+        android:paddingEnd="@dimen/sizeSixteen"
+        android:paddingTop="@dimen/sizeTwo"
+        android:paddingBottom="@dimen/sizeTwo"
         android:textSize="@dimen/caption_regular"
         android:fontFamily="@font/poppins_semi_bold"
         app:layout_constraintStart_toStartOf="parent"

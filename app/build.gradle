@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.project.startpark_admin"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'project.properties'
+        exclude 'META-INF/INDEX.LIST'
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
+    productFlavors {
+        productions {
+            applicationId "com.prod.startpark_admin"
+        }
+        development {
+            applicationId "com.dev.startpark_admin"
+        }
+    }
+
+
+}
+
+dependencies {
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //..Primary
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //..SwipeRefresh
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //..Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+
+    //..CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //..CustomCalendar
+    implementation 'com.github.npanigrahy:Custom-Calendar-View:v1.1'
+
+    //..EventBus
+    implementation 'org.greenrobot:eventbus:3.3.1'
+
+    //..Lottie
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    /*Picture Network*/
+    implementation "com.github.bumptech.glide:glide:4.14.2"
+
+
+}

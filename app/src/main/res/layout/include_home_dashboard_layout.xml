@@ -42,7 +42,7 @@
             android:gravity="center_vertical"
             android:letterSpacing="0.02"
             android:padding="@dimen/sizeEight"
-            android:text="PC Develop"
+            android:text="PC Sysytem"
             android:textColor="@color/colorTextPrimary"
             android:textSize="@dimen/headline_medium"
             app:layout_constraintStart_toEndOf="@+id/img_home_dashboard_menu"
